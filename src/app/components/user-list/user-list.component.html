@@ -1,5 +1,5 @@
-<div class="user-list">
+<div *ngIf="users && users.length > 0" class="user-list">
     <ul *ngFor="let user of users">
-      {{user.name}}
+      <li>{{user.name}}</li>
     </ul>
   </div>
